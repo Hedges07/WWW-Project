@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Product</title>
+    <style>
+        #canvas-basic {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; 
+            z-index: -1;   
+        }
+    </style>
+    <link rel="stylesheet" href="featuredProducts.css">
+</head>
+<body>
+    <canvas id="canvas-basic"></canvas>
+    <script src="/API/granim.js-2.0.0/dist/granim.min.js"></script>
+    <script>
+            var granimInstance = new Granim({
+            element: '#canvas-basic',
+            direction: 'diagonal',
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#EB3349', '#F45C43'],
+                        ['#00F260', '#0575E6'],
+                        ['#24C6DC', '#514A9D']
+                    ]
+                }
+            }
+        });
+    </script>
+    
+    <h1>Featured Product of the Week</h1>
+    <div class="Product">
+        <div class="row">
+            <div class="column">
+                <img src="img/TinyTina.png" alt="" width="90%" height="600px">
+                
+            </div>
+            <div class="column">
+                <h2>Tiny Tina's Wonderland Chaotic Great Edition</h2>
+                <p> 
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span> (15 Reviews)
+                    <br>
+                    Author: GearBox & 2k<br>
+                    Description:  <br>
+                    Full Game (with new-gen optimizations on PlayStation®5 / Xbox Series X|S) <br>
+                    Dragon Lord Pack Bonus Content <br>
+                    Season Pass (Includes the Butt Stallion Pack and 4 post-launch content drops) <br>
+                    EMBARK ON AN EPIC ADVENTURE FULL OF WHIMSY, WONDER, AND HIGH-POWERED WEAPONRY! <br>
+                    Price:119.99$ <br> 
+                    <label for="console"></label>
+                    <select name="console" id="console">
+                        <option value="PS5">PS5</option>
+                        <option value="XBOX">XBOX</option>
+                        <option value="Nintendo Switch">Switch</option>
+                    </select>
+                    <br>
+                    <button class="Cart">
+                        Add To Cart
+                    </button>
+                    <br>
+
+                    <div class="picRow">
+                        <div class="picColumn">
+                            <img src="img/TinyTina1.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="img/TinyTina2.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="img/TinyTina3.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="img/TinyTina4.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="img/TinyTina5.jpg" alt="" width="100%" height="200px">
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SignUp_SignIn</title>
+        <link rel="stylesheet" href="signUp_signIn.css">
+    </head>
+    <body>
+        
+        <h1>Sign Up</h1>
+        <p id = "SignUp">
+            <form action = "includes/signUp.inc.php" method="post"> 
+                <label for="firstName" class="required">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter First Name">
+                <br>
+                <label for="lastName" class="required">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name">
+                <br>
+                <label for="username" class="required">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <br>
+                <label for="Country" class="required">Country</label>
+                <select name="country" id="country">
+                    <option value="Country">Country</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                <br>
+                <label for="email" class="required">E-Mail</label>
+                <input type="text" name="email" id="email" placeholder="xxxxxxxxx@xxxx.xxx">
+                <br>
+                <label for="phone" class="required">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="555-555-5555">
+                <br>
+                <label for="passsword" class="required">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <br>
+                <label for="confirmPasssword" class="required">Conform Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                <p id = "two" class="required">(Password must contain at least one: uppercase letter, lowercase letter, special character, a number, and atleast 8 character long)</p>
+                <div class="Terms"> 
+                        <input type="checkbox" id="age" name="age">
+                        <label for="age" name="age" id="age" class="required">Over the age of 18?</label><br>
+                </div>
+                <br>
+                <button type ="submit" name="signUp" class ="signUp">Sign Up</button>
+            </form>                
+            
+        </p>
+        <p id="fields"> All those with * are required </p>
+
+        <h1>Sign In</h1>
+        <p id = "SignIn"></p>
+        <form action = "includes/signIn.inc.php" method="post">
+                <label for="username" class="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <br>
+                <label for="password">Password</label>
+                <input type="Password" name="password" id="password" placeholder="Enter Password">
+                <br>
+                <button type = "submit" class = "signIn">Sign In</button>
+            </form>
+        <form action="Home.html">
+            <button type="submit">Home</button>
+        </form>
+    </body>
+</html>

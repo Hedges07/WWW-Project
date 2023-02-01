@@ -1,0 +1,101 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Product</title>
+    <link rel="stylesheet" href="featuredProducts.css">
+    <style>
+        #canvas-basic {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; 
+            z-index: -1;   
+        }
+    </style>
+    <link rel="stylesheet" href="featuredProducts.css">
+</head>
+<body>
+    <canvas id="canvas-basic"></canvas>
+    <script src="/API/granim.js-2.0.0/dist/granim.min.js"></script>
+    <script>
+            var granimInstance = new Granim({
+            element: '#canvas-basic',
+            direction: 'diagonal',
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#9D50BB', '#6E48AA'],
+                        ['#4776E6', '#8E54E9'],
+                        ['#FF4E50', '#F9D423']
+                    ]
+                }
+            }
+        });
+    </script>
+    <h1>Featured Product of the Week</h1>
+    <div class="Product">
+        <div class="row">
+            <div class="column">
+                <img src="/img/skyrim.png" alt="" width="90%" height="600px">
+                
+            </div>
+            <div class="column">
+                <h2>The Elder Scrolls V: SKYRIM Anniversary Edition</h2>
+                <p> 
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span> (672 Reviews)
+                    <br>
+                    Author: Bethesda<br>
+                    Description:  <br>
+                    Winner of more than 200 Game of the Year Awards, Skyrim Special Edition brings the epic fantasy to life in stunning detail.
+                    The Special Edition includes the critically acclaimed game and add-ons with all-new features like remastered art and effects, volumetric god rays, dynamic depth of field, screen-space reflections, and more. 
+                    Skyrim Special Edition also brings the full power of mods to the PC and consoles. New quests, environments, characters, dialogue, armor, weapons and more - with Mods, there are no limits to what you can experience. <br>
+                    Price:89.99 <br> 
+                    <label for="console"></label>
+                    <select name="console" id="console">
+                        <option value="PS5">PS5</option>
+                        <option value="XBOX">XBOX</option>
+                        <option value="Nintendo Switch">Switch</option>
+                    </select>
+                    <br>
+                    <button class="Cart">
+                        Add To Cart
+                    </button>
+                    <br>
+
+                    <div class="picRow">
+                        <div class="picColumn">
+                            <img src="/img/skyrim1.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/skyrim2.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/skyrim3.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/skyrim4.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/skyrim5.jpg" alt="" width="100%" height="200px">
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

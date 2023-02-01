@@ -1,0 +1,9 @@
+label {
+    display: inline-block;
+    text-align: right;
+}
+label.required::before {
+    content: '*';
+    margin: right 4px;
+    color: red;
+}

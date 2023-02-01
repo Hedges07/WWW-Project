@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+</head>
+<body>
+    <h1>YOUR ACCOUNT</h1>
+    <table>
+        <th><a href="#accountDetails">Account Details</a> </th>
+        <th><a href="#changePassword">Change Password</a> </th>
+        <th><a href="#previousOrders">Previous Orders</a> </th>
+        <th><a href="#paymentInfo">Payment Info</a> </th>
+    </table>
+    <div class="accountDetails" id="accountDetails">
+        <form action="accountDetails.inc.php" method="POST">
+            <h2>Account Details</h2>
+            <label for="password" class="required">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <br>
+            <button type ="submit" name="accountDetails" class ="accountDetails">View Account Details</button>
+        </form>
+    </div>
+    <div class="changePassword" id="changePassword">
+        <form action="changePassword.inc.php" method="POST">
+            <h2>Change Password</h2>
+            <label for="password" class="required">Old Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Old Password">
+            <br>
+            <label for="changePassword" class="required">New Password</label>
+            <input type="password" name="changePassword" id="changePassword" placeholder="Enter New Password">
+            <p class="required">
+                (Password must contain at least one: uppercase letter, lowercase letter, special character, a number, and atleast 8 character long)
+                <br>
+                <button type ="submit" name="changePassword" class ="changePassword">Change Password</button>
+            </p>
+        </form>
+    </div>
+
+    <div class="previousOrders" id="previousOrders">
+        <h2>Previous Orders</h2>
+        <form action="previousOrders.inc.php" method="POST">
+            <button type ="submit" name="moreOrders" class ="moreOrders">Show Previous Orders</button>
+        </form>
+    </div>
+
+    <div class="paymentInfo" id="paymentInfo">
+        <form action="updatePaymentInfo.inc.php" method="POST">
+            <h2>Update Payment Info</h2>
+            <label for="credit" class="required">Credit Card Number</label>
+            <input type="password" name="credit" id="credit" placeholder="5555-5555-5555-5555">
+            <br>
+            <label for="expiry" class="required">Expiry Date</label>
+            <input type="text" name="expiry" id="expiry" placeholder="01/01">
+            <br>
+            <label for="csv" class="required">CSV</label>
+            <input type="text" name="csv" id="csv" placeholder="123">
+            <br>
+            <label for="cardholder" class="required">Cardholder Name</label>
+            <input type="text" name="cardholder" id="cardholder" placeholder="John Smith">
+            <br>
+            <label for="password" class="required">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br>
+            <button type ="submit" name="changeCreditInfo" class ="changeCreditInfo">Change Credit Information</button>
+        </form>
+        <br>
+        <form action="../signUp_signIn.html">
+            <button type="submit">Back to Login</button>
+        </form>
+        <form action="admin.inc.php">
+            <button type="submit">Admin Tools</button>
+        </form>
+    </div>
+</body>
+</html>

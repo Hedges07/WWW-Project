@@ -1,0 +1,101 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Product</title>
+    <link rel="stylesheet" href="featuredProducts.css">
+    <style>
+        #canvas-basic {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; 
+            z-index: -1;   
+        }
+    </style>
+    <link rel="stylesheet" href="featuredProducts.css">
+</head>
+<body>
+    <canvas id="canvas-basic"></canvas>
+    <script src="/API/granim.js-2.0.0/dist/granim.min.js"></script>
+    <script>
+            var granimInstance = new Granim({
+            element: '#canvas-basic',
+            direction: 'diagonal',
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#4CB8C4', '#3CD3AD'],
+                        ['#FF512F', '#DD2476'],
+                        ['#24C6DC', '#DA22FF']
+                    ]
+                }
+            }
+        });
+    </script>
+    <h1>Featured Product of the Week</h1>
+    <div class="Product">
+        <div class="row">
+            <div class="column">
+                <img src="/img/callofduty.png" alt="" width="90%" height="600px">
+                
+            </div>
+            <div class="column">
+                <h2>Call of Duty Vanguard</h2>
+                <p> 
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span> (94 Reviews)
+                    <br>
+                    Author: SledgeHammer Games<br>
+                    Description:  <br>
+                    The critically-acclaimed Call of Duty franchise returns with Call of Duty: Vanguard, in which players will experience global combat through the eyes of heroes of World War II and the fateful events that brought them together. Developed by Sledgehammer Games, Vanguard is a deeply engaging narrative, featuring a select group of soldiers from different countries and backgrounds who rise together to meet the world's gravest threat, change the fortunes of the war and set the table for what we know today as special forces combat.  
+                    Through the remarkable journey of these steeled soldiers, players will experience influential battles of World War II as they fight for victory across multiple theaters of war - the Eastern and Western Fronts of Europe, the Pacific and North Africa.
+                    This is their story. This is Call of Duty: Vanguard. <br>
+                    Price:89.99 <br> 
+                    <label for="console"></label>
+                    <select name="console" id="console">
+                        <option value="PS5">PS5</option>
+                        <option value="XBOX">XBOX</option>
+                        <option value="Nintendo Switch">Switch</option>
+                    </select>
+                    <br>
+                    <button class="Cart">
+                        Add To Cart
+                    </button>
+                    <br>
+
+                    <div class="picRow">
+                        <div class="picColumn">
+                            <img src="/img/callofduty1.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/callofduty2.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/callofduty3.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/callofduty4.jpg" alt="" width="100%" height="200px">
+                        </div>
+                        <div class="picColumn">
+                            <img src="/img/callofduty5.jpg" alt="" width="100%" height="200px">
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

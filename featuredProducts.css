@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+.column{
+    flex: 50%;
+}
+.picRow {
+    margin-top: 120px;
+    display: flex;
+}
+.picColumn {
+    flex: 20%;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.picColumn:hover {  
+    transform: scale(2);
+}
+.checked {
+    color: orange;
+}
